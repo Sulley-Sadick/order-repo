@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+
+    /*|| COLORS || */
+
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(224, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: #1f2f56;
+    --white-color: #fff;
+
+    /* || FONTS || */
+
+    --FF-body: 'Red Hat Display', sans-serif;
+    --FS-body: 1rem;
+    --FS-heading: 1.5rem;
+    --FW-500: 500;
+    --FW-700: 500;
+    --FW-900: 500;
+}
+
+
+/* || RESETS || */
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    line-height: 1.1rem;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+body{
+    font-family: var(--FF-body);
+    font-weight: var(--FW-500);
+    background-color: var(--pale-blue);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    font-size: var(--FS-body);
+    color: var(--desaturated-blue);
+}
+
+
+/* || typography || */
+
+.title{
+    font-size: 2.5rem;
+    font-weight: var(--FW-900);
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.annual-desc, .title{
+    color: var(--dark-blue);
+    font-weight: var(--FW-900);
+}
+
+.annual-btn{
+    color: var(--bright-blue);
+    padding-top: 1rem;
+}
+
+
+.annual-btn:hover{
+    color: var(--desaturated-blue);
+}
+
+
+/* || components *|| */
+
+.payment-button{
+    margin-top: 1rem;
+    background-color: var(--bright-blue);
+    font: inherit;
+    color: var(--very-pale-blue);
+    padding: .8rem;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: background .3s ease;
+    box-shadow: 0 10px 15px hsla(245, 75%, 52%, 0.4);
+}
+
+
+.payment-button:hover{
+    background-color: var(--desaturated-blue);
+}
+
+.cancel-button{
+    border: none;
+    background: transparent;
+    color: var(--desaturated-blue);
+    font-size: 18px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+.cancel-button:hover{
+    color: var(--bright-blue);
+}
+
+/* || General styles || */
+
+.wrapper{
+    display: grid;
+    place-items: center;
+    height: 100dvh;
+}
+
+
+.card-container{
+    max-width: 25em;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px var(--very-pale-blue);
+
+}
+
+.hero-img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card-content{
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.card-pricing, .annual-pricing{
+    display: flex;
+    align-items: center;
+}
+
+.card-pricing{
+    justify-content: space-between;
+}
+
+.annual-pricing{
+    gap: 1rem;
+}
+
+.annual-desc{
+    margin-bottom: .3rem;
+}
+
+.card-content > * * *{
+    margin-top: 1.75rem;
+}
+
+
+
+.attribution {
+    background-color: #333;
+    color: #f5f6f7;
+    font-size: 11px; 
+    text-align: center;
+    padding: .7rem;
+}
+
+.attribution a { color: #f5f6f7 };
